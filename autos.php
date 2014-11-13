@@ -100,6 +100,9 @@ h1
 			
 		?>
 	</div>
-		<div class='col-md-3'><input aling="center" type="button" value="REGRESAR" onClick="location.href = 'index.php'"><br></div>
+	<div class'row'>
+		<div class='col-md-3'></div>
+		<div class='col-md-9'> <input type="button" value="REGRESAR" onClick="location.href = 'index.php'"><br></div>
+	</div>
 </body>
 </html>
