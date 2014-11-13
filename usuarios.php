@@ -3,12 +3,6 @@
 	<meta charset="UTF-8">
     <meta name="vieport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    
-
-
-
-
-
 </head>
 
 
@@ -21,24 +15,6 @@ color: black;
 border-color: white;
 font-size: 30px;
 font-style: normal;
-
-}
-.tabla
-{
-	font-size: 20px;
-
-background-color: green;
-background-size: 3px;
-color: white;
-font-style:  oblique;
-
-}
-.border
-{
-border-width: medium;
-border-color: black;
-border-style: solid;
-
 
 }
 .jumbotron
@@ -66,31 +42,31 @@ h1
 	<div>
 		<?php
 		
-			echo '<table  align="center">';
+			echo '<table  align="center" class"table">';
 			echo '<tr class="top"><td class="border">id</td>';
-			echo '<td class="border">names</td>';
-			echo '<td class="border">midle_name</td>';
-			echo '<td class="border">last_name</td>';
-			echo '<td class="border">email</td></tr>';
+				echo '<td>names</td>';
+				echo '<td>midle_name</td>';
+				echo '<td>last_name</td>';
+				echo '<td>email</td></tr>';
 				while ($line = mysqli_fetch_array($result, MYSQL_ASSOC))
 				{
-    				echo '<tr class="tabla">';
+    				echo '<tr class="table">';
     				
     				
     					
-        				echo '<td class="border">';
+        				echo '<td">';
         				echo $line['id'];
         				echo '</td>';
-        				echo '<td class="border">';
+        				echo '<td>';
         				echo $line['names'];
         				echo '</td>';
-    					echo '<td class="border">';
+    					echo '<td>';
         				echo $line['midle_name'];
         				echo '</td>';
-    					echo '<td class="border">';
+    					echo '<td>';
         				echo $line['last_name'];
         				echo '</td>';
-    					echo '<td class="border">';
+    					echo '<td>';
         				echo $line['email'];
         				echo '</td>';
     				
@@ -102,7 +78,9 @@ h1
 		
 		?>
 	</div>
-	<div class='col-md-3'><input type="button" value="REGRESAR" onClick="location.href = 'index.php'"><br></div>
-		
+	<div class'row'>
+		<div class='col-md-3'></div>
+		<div class='col-md-9'> <input type="button" value="REGRESAR" onClick="location.href = 'index.php'"><br></div>
+	</div>
 </body>
 </html>
