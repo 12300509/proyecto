@@ -42,46 +42,20 @@ h1
 	<div>
 		<?php
 		
-<<<<<<< HEAD
+
 			echo '<table  class="table">';
-			echo '<tr ><td >id</td>';
-			echo '<td >names</td>';
-			echo '<td >midle_name</td>';
-			echo '<td >last_name</td>';
-			echo '<td >email</td></tr>';
-				while ($line = mysqli_fetch_array($result, MYSQL_ASSOC))
-				{
-    				echo '<tr >';
-    				
-    				
-    					
-        				echo '<td >';
-        				echo $line['id'];
-        				echo '</td>';
-        				echo '<td >';
-        				echo $line['names'];
-        				echo '</td>';
-    					echo '<td >';
-        				echo $line['midle_name'];
-        				echo '</td>';
-    					echo '<td >';
-        				echo $line['last_name'];
-        				echo '</td>';
-    					echo '<td >';
-=======
-			echo '<table  align="center" class"table">';
-			echo '<tr class="top"><td class="border">id</td>';
+			echo '<tr><td>id</td>';
 				echo '<td>names</td>';
 				echo '<td>midle_name</td>';
 				echo '<td>last_name</td>';
 				echo '<td>email</td></tr>';
 				while ($line = mysqli_fetch_array($result, MYSQL_ASSOC))
 				{
-    				echo '<tr class="table">';
+    				echo '<tr >';
     				
     				
     					
-        				echo '<td">';
+        				echo '<td>';
         				echo $line['id'];
         				echo '</td>';
         				echo '<td>';
@@ -94,7 +68,6 @@ h1
         				echo $line['last_name'];
         				echo '</td>';
     					echo '<td>';
->>>>>>> 73e3066e8d8c83977bce8d140a7a1e754092eab5
         				echo $line['email'];
         				echo '</td>';
     				
