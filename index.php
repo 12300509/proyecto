@@ -21,7 +21,7 @@ h1
 }
 </style>
 <body class='background'>
-	<div class='jumbotron'><h1>Bienvenido<h1></div>
+	<div class='jumbotron'><h1>Bienvenido;<h1></div>
 	<div>
 		<form>
 			<div class='row'>
@@ -29,6 +29,14 @@ h1
 				<div class='col-md-9'>
 					<div class='col-md-3'><input type="button" value="Usuarios" onClick="location.href = 'usuarios.php'"><br></div>
 					<div class='col-md-5'>Muestra una lista de usuarios y un formulario para agregar.<br></div>
+				</div>
+			</div>
+			<br>
+			<div class='row'>
+				<div class='col-md-3'></div>
+				<div class='col-md-9'>
+					<div class='col-md-3'><input type="button" value="Sucursales" onClick="location.href = 'sucursales.php'"><br></div>
+					<div class='col-md-5'>Muestra una lista de sucursales y un formulario para agregar.<br></div>
 				</div>
 			</div>
 			<br>
@@ -45,6 +53,14 @@ h1
 				<div class='col-md-9'>
 					<div class='col-md-3'><input type="button" value="Registro Usuarios" onClick="location.href = 'registrar_usuarios.php'"><br></div>
 					<div class='col-md-5'>Dan de alta los registros de Usuarios.<br></div>
+				</div>
+			</div>
+			<br>
+			<div class='row'>
+				<div class='col-md-3'></div>
+				<div class='col-md-9'>
+					<div class='col-md-3'><input type="button" value="Registro Sucursales" onClick="location.href = 'registrar_sucursales.php'"><br></div>
+					<div class='col-md-5'>Dan de alta las sucursales.<br></div>
 				</div>
 			</div>
 			<br>

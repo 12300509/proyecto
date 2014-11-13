@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="vieport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="animate.css">
 </head>
 <style type="text/css">
