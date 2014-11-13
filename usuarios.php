@@ -102,5 +102,7 @@ h1
 		
 		?>
 	</div>
+	<div class='col-md-3'><input type="button" value="REGRESAR" onClick="location.href = 'index.php'"><br></div>
+		
 </body>
 </html>
