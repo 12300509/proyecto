@@ -57,35 +57,35 @@ h1
 	<div class='jumbotron'><h1>Consulta Autos;<h1></div>
 	<div>
 		<?php
-			echo '<table align="center">';
-			echo '<tr class="top"><td class="border">id</td>';
-			echo '<td class="border">name</td>';
-			echo '<td class="border">color</td>';
-			echo '<td class="border">make</td>';
-			echo '<td class="border">model</td>';
-			echo '<td class="border">year</td></tr>';
+			echo '<table class="table">';
+			echo '<tr ><td >id</td>';
+			echo '<td >name</td>';
+			echo '<td >color</td>';
+			echo '<td >make</td>';
+			echo '<td >model</td>';
+			echo '<td >year</td></tr>';
 				while ($line = mysqli_fetch_array($result, MYSQL_ASSOC))
 				{
-    				echo '<tr class="tabla">';
+    				echo '<tr >';
     				
     				
     					
-        				echo '<td class="border">';
+        				echo '<td >';
         				echo $line['id'];
         				echo '</td>';
-        				echo '<td class="border">';
+        				echo '<td >';
         				echo $line['name'];
         				echo '</td>';
-    					echo '<td class="border">';
+    					echo '<td >';
         				echo $line['color'];
         				echo '</td>';
-    					echo '<td class="border">';
+    					echo '<td >';
         				echo $line['make'];
         				echo '</td>';
-    					echo '<td class="border">';
+    					echo '<td >';
         				echo $line['model'];
         				echo '</td>';
-        				echo '<td class="border">';
+        				echo '<td >';
         				echo $line['year'];
         				echo '</td>';
     				

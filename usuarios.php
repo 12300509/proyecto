@@ -66,31 +66,31 @@ h1
 	<div>
 		<?php
 		
-			echo '<table  align="center">';
-			echo '<tr class="top"><td class="border">id</td>';
-			echo '<td class="border">names</td>';
-			echo '<td class="border">midle_name</td>';
-			echo '<td class="border">last_name</td>';
-			echo '<td class="border">email</td></tr>';
+			echo '<table  class="table">';
+			echo '<tr ><td >id</td>';
+			echo '<td >names</td>';
+			echo '<td >midle_name</td>';
+			echo '<td >last_name</td>';
+			echo '<td >email</td></tr>';
 				while ($line = mysqli_fetch_array($result, MYSQL_ASSOC))
 				{
-    				echo '<tr class="tabla">';
+    				echo '<tr >';
     				
     				
     					
-        				echo '<td class="border">';
+        				echo '<td >';
         				echo $line['id'];
         				echo '</td>';
-        				echo '<td class="border">';
+        				echo '<td >';
         				echo $line['names'];
         				echo '</td>';
-    					echo '<td class="border">';
+    					echo '<td >';
         				echo $line['midle_name'];
         				echo '</td>';
-    					echo '<td class="border">';
+    					echo '<td >';
         				echo $line['last_name'];
         				echo '</td>';
-    					echo '<td class="border">';
+    					echo '<td >';
         				echo $line['email'];
         				echo '</td>';
     				

@@ -57,29 +57,29 @@ h1
 	<div class='jumbotron'><h1>Consulta sucursales;<h1></div>
 	<div>
 		<?php
-			echo '<table align="center">';
-			echo '<tr class="top"><td class="border">id</td>';
-			echo '<td class="border">name</td>';
-			echo '<td class="border">address</td>';
-			echo '<td class="border">phone</td>';
+			echo '<table class="table"';
+			echo '<tr ><td >id</td>';
+			echo '<td >name</td>';
+			echo '<td >address</td>';
+			echo '<td >phone</td>';
 			
 			echo '</tr>';
 				while ($line = mysqli_fetch_array($result, MYSQL_ASSOC))
 				{
-    				echo '<tr class="tabla">';
+    				echo '<tr >';
     				
     				
     					
-        				echo '<td class="border">';
+        				echo '<td >';
         				echo $line['id'];
         				echo '</td>';
-        				echo '<td class="border">';
+        				echo '<td >';
         				echo $line['name'];
         				echo '</td>';
-    					echo '<td class="border">';
+    					echo '<td >';
         				echo $line['address'];
         				echo '</td>';
-    					echo '<td class="border">';
+    					echo '<td ">';
         				echo $line['phone'];
         				echo '</td>';
     					
