@@ -3,36 +3,11 @@
 	<meta charset="UTF-8">
     <meta name="vieport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="js/autos.js"></script>
     
 </head>
 <style type="text/css">
-.top
-{
-
-background-color:white ; 
-color: black;
-border-color: white;
-font-size: 30px;
-font-style: normal;
-
-}
-.tabla
-{
-	font-size: 20px;
-
-background-color: green;
-background-size: 3px;
-color: white;
-font-style:  oblique;
-
-}
-.border
-{
-border-width: medium;
-border-color: black;
-border-style: solid;
-
-
 }
 .jumbotron
 {
