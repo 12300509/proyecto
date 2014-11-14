@@ -3,6 +3,8 @@
 	<meta charset="UTF-8">
     <meta name="vieport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script src='js/jquery-2.1.1.js'></script>
+	<script src='js/usuarios.js'></script>
 </head>
 
 
