@@ -3,25 +3,10 @@
     <meta charset="UTF-8">
     <meta name="vieport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
     <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="js/registrar_sucursales.js"></script>
-   
 </head>
-<style type="text/css">
-.jumbotron
-{
-    background-color: beige;
-}
-.background
-{
-    background-color: #FFFF5A;
-}
-h1
-{
-    text-align: center;
-    font: bold 170% monospace;
-}
-</style>
 <body class='background'>
  
     <div class='jumbotron'><h1>Registro Sucursales;<h1></div>

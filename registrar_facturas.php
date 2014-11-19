@@ -9,36 +9,36 @@
     <script type="text/javascript" src="js/registrar_autos.js"></script>
 </head>
 <body class='background'>
-    <div class='jumbotron'><h1>Registro Autos;<h1></div>
+    <div class='jumbotron'><h1>Registro facturas;<h1></div>
     <div>
         <form action='regis_a.php' method='post';
             <div class='row'>
                 <div class='col-md-3'></div>
                 <div class='col-md-9'>
-                    <div class='col-md-3'>Ingrese el nombre</div>
-                    <div class='col-md-3'><input id="name" type="text" name="name" value=""/><br></div>
+                    <div class='col-md-3'>Ingrese el monto</div>
+                    <div class='col-md-3'><input id="amount" type="text" name="name" value=""/><br></div>
                 </div>
             </div>
             <div class='row'>
                 <div class='col-md-3'></div>
                 <div class='col-md-9'>
-                    <div class='col-md-3'>Ingrese el color</div>
-                    <div class='col-md-3'><input id="color" type="text" name="color" value=""/><br></div>
-                </div>
-            </div>
-            <br>
-            <div class='row'>
-                <div class='col-md-3'></div>
-                <div class='col-md-9'>
-                    <div class='col-md-3'>Ingrese la marca</div>
-                    <div class='col-md-3'><input id="mark" type="text" name="mark" value=""/><br></div>
+                    <div class='col-md-3'>Ingrese el iva</div>
+                    <div class='col-md-3'><input id="iva" type="text" name="color" value=""/><br></div>
                 </div>
             </div>
             <br>
             <div class='row'>
                 <div class='col-md-3'></div>
                 <div class='col-md-9'>
-                    <div class='col-md-3'>Ingrese el modelo</div>
+                    <div class='col-md-3'>Ingrese el impuesto extra</div>
+                    <div class='col-md-3'><input id="extra_tax" type="text" name="mark" value=""/><br></div>
+                </div>
+            </div>
+            <br>
+            <div class='row'>
+                <div class='col-md-3'></div>
+                <div class='col-md-9'>
+                    <div class='col-md-3'>Ingrese el to</div>
                     <div class='col-md-3'><input id="model"type="text" name="model" value=""/><br></div>
                 </div>
             </div>
