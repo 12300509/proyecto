@@ -23,7 +23,7 @@ mysqli_query($link,$query);
 $my_error = mysql_error($link);
 
 
-header("location:index.php");
+header("location:facturas.php");
 
 }
 

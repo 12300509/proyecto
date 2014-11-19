@@ -1,7 +1,7 @@
 $(document).on('ready', function()
 {
 
-var monto = $("#monto");
+var monto = $("#amount");
 var iva = $("#iva");
 var impuesto_extra = $("#impuesto_extra");
 var total = $("#total");
@@ -35,12 +35,21 @@ var total = $("#total");
 			alert('monto muy corto');
 			$(this).val("");
 		}
+			
 
-		var algo=$(iva).val($(this).val()*.16);
-		var algo1=$(impuesto_extra).val($(this).val()*.10);
-		var algo2=$(this).val();
+
+
+		var algo= parseFloat($(iva).val($(this).val()));
+		algo=algo*0.16;
+		var algo1=parseFloat($(impuesto_extra).val($(this).val()));
+		algo1=algo1*0.10;
+		var algo2=parseFloat($(this).val());
 		
-		$(total).val($(impuesto_extra).val()+$(iva).val()+$(this).val());
+		var algo3= algo+algo1+algo2;
+
+
+		$(total).val(algo3);
+
 
 	});
 
