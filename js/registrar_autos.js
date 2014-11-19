@@ -15,26 +15,29 @@ $(document).on('ready', function()
 			 for(i=0; i<texto.length; i++)
 			 {
       				if (numeros.indexOf(texto.charAt(i),0)!=-1)
-      				a++;
-      				if(a>0)
-      					i=texto.length;
+      					a++;
 			 }
-			 reuturn a;
+			 if(a>0)
+      				return true;
+      		 if(a==0)
+      		 		return false;
 		}
-		name.change(function()
+		function vacio(cad)
+		{
+			if(cad.length < 1)
+			{
+				console.log("El espacio está vacío");
+				cad="";
+			}
+		}
+		name.blur(function()
 		{
 			if(tiene_numeros("$(this).value()"))
 				alert("Este espacio no admite numeros");
-		if($(this).val().length < 1)
-		{
+			vacio("$(this).value()");
+		});
 
-			alert('El espacio está vacío');
-			$(this).val("");
-		}
-
-	});
-
-			color.change(function()
+			color.blur(function()
 				{
 					if(tiene_numeros("$(this).value()"))
 						alert("Este espacio no admite numeros");
@@ -48,7 +51,7 @@ $(document).on('ready', function()
 
 				});
 
-				mark.change(function()
+				mark.blur(function()
 				{
 					if(tiene_numeros("$(this).value()"))
 						alert("Este espacio no admite numeros");
@@ -61,7 +64,7 @@ $(document).on('ready', function()
 
 
 				});
-				model.change(function()
+				model.blur(function()
 				{
 					if(tiene_numeros("$(this).value()"))
 						alert("Este espacio no admite numeros");
@@ -74,7 +77,7 @@ $(document).on('ready', function()
 
 
 				});
-				year.change(function()
+				year.blur(function()
 				{
 					if(!(tiene_numeros("$(this).value()")))
 						alert("Este espacio no admite caracteres");
