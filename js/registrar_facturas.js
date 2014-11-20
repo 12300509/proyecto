@@ -39,17 +39,33 @@ var total = $("#total");
 
 
 
-		var algo= parseFloat($(iva).val($(this).val()));
-		algo=algo*0.16;
-		var algo1=parseFloat($(impuesto_extra).val($(this).val()));
-		algo1=algo1*0.10;
-		var algo2=parseFloat($(this).val());
+		var a=$(this).val();
+		var b=$(iva).val();
+		var c=$(impuesto_extra).val();
+		var d=$(total).val("");
+
+		parseFloat(a);
+		parseFloat(b);
+		parseFloat(c);
+		parseFloat(d);
+
 		
-		var algo3= algo+algo1+algo2;
+		
 
-
-		$(total).val(algo3);
-
+		b=a*0.16;
+		console.log(b);
+		parseFloat(b);
+		c=a*0.10;
+		console.log(c);
+		parseFloat(c);
+		parseFloat(d);
+		d=(parseFloat(a)+parseFloat(c)+parseFloat(b));
+		
+		console.log(d);
+		$(iva).val(a*0.16);
+		$(impuesto_extra).val(a*0.10);
+		
+		$(total).val(d);
 
 	});
 
