@@ -1,6 +1,6 @@
 $(document).on('ready', function()
 {
-	
+		
 		var name = $('#name');
 		var midle_name = $('#midle_name');
 		var last_name = $('#last_name');
@@ -12,18 +12,32 @@ $(document).on('ready', function()
 		{
 			 for(i=0; i<texto.length; i++){
       if (numeros.indexOf(texto.charAt(i),0)!=-1){
-      	alert('sin numeros');
+      	return 0;
       }
    }
          
-   alert("nada");
+   return 1;
 }
 	
 	name.change(function()
 	{
-	tiene_numeros("$(this).value()");
+		var nums;
+	
+	nums=(tiene_numeros($(this).val()));
 
-		if($(this).val().length < 4)
+	
+
+	if(nums=1)
+		console.log("no tiene numeros");
+	
+	
+			if(nums=0)
+			
+			
+				console.log("no tiene numeros");
+			
+		
+		if($(this).val().length < 2)
 		{
 
 			alert('nombre muy corto');
@@ -45,7 +59,22 @@ $(document).on('ready', function()
 
 			midle_name.change(function()
 				{
-					if($(this).val().length < 4)
+					var nums;
+	
+	nums=tiene_numeros($(this).val());
+
+	
+
+	if(nums=1)
+	
+
+		console.log(" tiene numeros");
+	//$(this).val("");
+	
+	if(nums=0)
+		console.log("no tiene numeros");
+
+					if($(this).val().length < 2)
 					{
 
 						alert("apellido muy corto");
@@ -57,7 +86,22 @@ $(document).on('ready', function()
 
 				last_name.change(function()
 				{
-					if($(this).val().length < 4)
+					var nums;
+	
+	nums=tiene_numeros($(this).val());
+
+	
+
+	if(nums=1)
+	
+		console.log(" tiene numeros");
+	
+		//$(this).val("");
+	
+	if(nums=0)
+		console.log("no tiene numeros");
+
+					if($(this).val().length < 2)
 					{
 
 						alert("apellido muy corto");

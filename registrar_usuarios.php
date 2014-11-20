@@ -3,40 +3,10 @@
     <meta charset="UTF-8">
     <meta name="vieport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+       <link rel="stylesheet" type="text/css" href="estilo.css">
    <script src='js/jquery-2.1.1.js'></script>
     <script src='js/registrar_usuarios.js'></script>
 </head>
-<style type="text/css">
-.errores{
-    -webkit-boxshadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border-radius:10px;
-    -webkit-border-radius: 10px;
-    background: red;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    color: #fff;
-    display: none;
-    font-size: 12px;
-    margin-top: -40px;
-    margin-left: 250px;
-    padding: 10px;
-    position: absolute;
-}
-.jumbotron
-{
-    background-color: beige;
-}
-.background
-{
-    background-color: #FFFF5A;
-}
-h1
-{
-    text-align: center;
-    font: bold 170% monospace;
-}
-</style>
 <body class='background'>
  
     <div class='jumbotron'><h1>Registro Usuarios;<h1></div>
